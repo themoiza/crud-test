@@ -1,0 +1,67 @@
+:root {
+	--dark-hue: 20;
+	--dark-sat: 6%;
+	--dark-lig: 9%;
+	--dark-lig-soft: 80%;
+	--light-hue: 0;
+	--light-sat: 0%;
+	--light-lig: 98%;
+	--light-lig-soft: 20%;
+	--pri-hue: 245;
+	--pri-sat: 48%;
+	--pri-lig: 40%;
+	--sec-hue: 202;
+	--sec-sat: 61%;
+	--sec-lig: 54%;
+	--danger-hue: 5;
+	--danger-sat: 60%;
+	--danger-lig: 41%;
+	--foreground-hue: var(--dark-hue);
+	--foreground-sat: var(--dark-sat);
+	--foreground-lig: var(--dark-lig);
+	--foreground-lig-soft: 80%;
+	--background-hue: var(--light-hue);
+	--background-sat: var(--light-sat);
+	--background-lig: var(--light-lig);
+	--background-lig-soft: 20%;
+	--font-family: monospace;
+	--radius: 3px;
+}
+
+html {
+	font-size: 15px;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--font-family);
+}
+
+/* DARK MODE */
+.LightMode {
+	--foreground-hue: var(--dark-hue);
+	--foreground-sat: var(--dark-sat);
+	--foreground-lig: var(--dark-lig);
+	--foreground-lig-soft: 80%;
+	--background-hue: var(--light-hue);
+	--background-sat: var(--light-sat);
+	--background-lig: var(--light-lig);
+	--background-lig-soft: 20%;
+}
+
+/* DARK MODE */
+.DarkMode {
+	--foreground-hue: var(--light-hue);
+	--foreground-sat: var(--light-sat);
+	--foreground-lig: var(--light-lig);
+	--foreground-lig-soft: 20%;
+	--background-hue: var(--dark-hue);
+	--background-sat: var(--dark-sat);
+	--background-lig: var(--dark-lig);
+	--background-lig-soft: 80%;
+}
+
+a {
+	text-decoration: none;
+	color: hsl(var(--foreground-hue), var(--foreground-sat), var(--foreground-lig));
+}

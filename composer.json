@@ -1,0 +1,22 @@
+{
+    "name": "moises/crud-test",
+    "description": "Crud Test",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/",
+            "Moises\\CrudTest\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Moisés de Lima",
+            "email": "the.moiza@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "the.moiza/crud": "dev-master",
+        "the.moiza/mvc-core": "dev-master"
+    }
+}

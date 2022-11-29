@@ -1,0 +1,60 @@
+<div id="idTitlesIndex">
+	<div class="mgb1" style="display: flex; justify-content: space-between; align-items: center;">
+		<div style="width: 6rem;flex: 0 0 auto;"><button type="button" class="Btn">go back</button></div>
+		<div style="width: calc(100% - 12rem);flex: 0 0 auto;"><h1>{{titles.list}}</h1></div>
+		<div style="width: 6rem;flex: 0 0 auto; text-align: right;"><button type="button" class="Btn">{{titles.new}}</button></div>
+	</div>
+</div>
+<div class="mgb1">
+	<div id="idPagination1" class="Pagination">
+		<button type="button" class="Btn BtnTrans PagLeft"></button>
+		<button type="button" class="Btn BtnTrans PagAll"></button>
+		<button type="button" class="Btn BtnTrans PagRight"></button>
+	</div>
+</div>
+<div id="idGridIndex" class="TableWrapper">
+	<table class="grid">
+		<thead>
+			<tr>
+				<th></th>
+				<th style="text-align: left;" v-for="th in thead">{{th.title}}</th>
+				<th></th>
+			</tr>
+			<tr>
+				<th style="text-align: left; width: 1rem;">
+					<div class="field">
+						<input class="Checkbox" type="checkbox" />
+					</div>
+				</th>
+				<th style="text-align: left;" v-for="th in thead">
+					<div class="field w100p">
+						<input v-if="th.search" type="text" :placeholder="'Search in '+th.title" :title="th.title" />
+					</div>
+				</th>
+				<th style="text-align: right;">ACTIONS</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr v-for="cols in fetch">
+				<td style="width: 1rem;">
+					<div class="field">
+						<input class="Checkbox" type="checkbox" />
+					</div>
+				</td>
+				<td v-for="(value, col) in cols" v-if="!(['actions', 'edit', 'remove'].includes(col))">{{value}}</td>
+				<td style="text-align: right;">
+					<button type="button" class="Btn" v-if="cols.edit">EDIT</button>
+					<button type="button" class="Btn" v-if="cols.remove">REMOVE</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="mgt1">
+	<div id="idPagination2" class="Pagination">
+		<button type="button" class="Btn BtnTrans PagLeft"></button>
+		<button type="button" class="Btn BtnTrans PagAll"></button>
+		<button type="button" class="Btn BtnTrans PagRight"></button>
+	</div>
+</div>
+<script src="js/index.js"></script>

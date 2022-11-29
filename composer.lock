@@ -1,0 +1,98 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e09d739efb9d5bea0116354dbbe99d08",
+    "packages": [
+        {
+            "name": "the.moiza/crud",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/themoiza/crud.git",
+                "reference": "a218cf78ea25621c583dcdaf37b0292c3f13914a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/themoiza/crud/zipball/a218cf78ea25621c583dcdaf37b0292c3f13914a",
+                "reference": "a218cf78ea25621c583dcdaf37b0292c3f13914a",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TheMoiza\\Crud\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Moisés de Lima",
+                    "email": "the.moiza@gmail.com"
+                }
+            ],
+            "description": "Advanced PHP Crud",
+            "support": {
+                "issues": "https://github.com/themoiza/crud/issues",
+                "source": "https://github.com/themoiza/crud/tree/v1.0.0"
+            },
+            "time": "2022-08-05T14:07:36+00:00"
+        },
+        {
+            "name": "the.moiza/mvc-core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/themoiza/mvc-core.git",
+                "reference": "fd70325f815796ec1a8620e7f1c7673908b2a4a4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/themoiza/mvc-core/zipball/fd70325f815796ec1a8620e7f1c7673908b2a4a4",
+                "reference": "fd70325f815796ec1a8620e7f1c7673908b2a4a4",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TheMoiza\\MvcCore\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Moisés de Lima",
+                    "email": "the.moiza@gmail.com"
+                }
+            ],
+            "description": "Simple PHP MVC Core",
+            "support": {
+                "issues": "https://github.com/themoiza/mvc-core/issues",
+                "source": "https://github.com/themoiza/mvc-core/tree/v1.0.11"
+            },
+            "time": "2022-11-16T13:49:23+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "the.moiza/crud": 20,
+        "the.moiza/mvc-core": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
+}
